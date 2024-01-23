@@ -1,12 +1,16 @@
 // src/App.js
 import React from 'react';
-import Counter from './components/Counter';
+import TodoForm from './components/TodoForm';
+import TodoList from './components/TodoList';
+
 
 const App = () => {
   return (
     <div className="app">
-      <h1>Redux Counter App</h1>
-      <Counter />
+      
+      <h1>Redux Todo App</h1>
+      <TodoForm/>
+      <TodoList/>
     </div>
   );
 };

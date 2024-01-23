@@ -1,10 +1,9 @@
-// src/store/configureStore.js
-import { legacy_createStore } from 'redux';
-import counterReducer from '../reducers/CounterReducer';
+import todoReducers from "../reducers/todoReducers"
+import {legacy_createStore} from 'redux'
 
 const configureStore = () => {
-  const store = legacy_createStore(counterReducer);
-  return store;
-};
+    const store = legacy_createStore(todoReducers)
+    return store
+}
 
-export default configureStore;
+export default configureStore
